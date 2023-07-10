@@ -1,0 +1,123 @@
+
+.advice-container {
+  text-align: center;
+  max-width: 16em;
+  margin-bottom: 1em;
+}
+
+.advice-container__number{
+  color: var(--Neon-Green);
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-size: .4em;
+}
+
+.advice-container__advice {
+  color: var(--Light-Cyan);
+  font-size: 1em;
+}
+
+.line-divisor {
+  content: url("./assets/images/pattern-divider-desktop.svg");
+  width: 100%;
+}
+
+.advice-btn {
+  position: absolute;
+  bottom: -2.5em;
+  left: calc(50% - 2.5em);
+  cursor: pointer;
+  background-color: var(--Neon-Green);
+  height: 5em;
+  width: 5em;
+  display: grid;
+  place-content: center;
+  border: none;
+  border-radius: 50%;
+}
+
+.advice-btn:hover {
+  box-shadow: var(--Neon-Green) 0 0 1em;
+  transition: .4s;
+}
+
+.advice-btn__dice-icon{
+  content: url("./assets/images/icon-dice.svg");
+  transition: transform .3s;
+      -webkit-transition: transform .3s;
+      -moz-transition: transform .3s;
+}
+
+.advice-btn:active > .advice-btn__dice-icon{
+  transform: rotateZ(360deg);
+      -webkit-transform: rotateZ(360deg);
+      -moz-transform: rotateZ(360deg);
+}
+
+@media (max-width: 576px) {
+  .line-divisor {
+    content: url("./assets/images/pattern-divider-mobile.svg")
+  }
+
+}
+
+/*Animations*/
+
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
