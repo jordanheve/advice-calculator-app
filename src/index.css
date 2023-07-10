@@ -48,7 +48,7 @@ body {
   color: var(--Light-Cyan);
   text-align: center;
   left: calc(50% - 2.9rem);
-  bottom: 2%;
+  bottom: 1em;
 }
 
 
