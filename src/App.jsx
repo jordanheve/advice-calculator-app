@@ -35,7 +35,7 @@ function App() {
           <q className={'advice-container__advice animated'+ fadeClass}>{advice.advice}</q>
         </div>
         <div className="line-divisor"></div>
-        <button className="advice-btn" onClick={handleClick}>
+        <button aria-label="Get a new advice" className="advice-btn" onClick={handleClick}>
           <i className="advice-btn__dice-icon"></i>
         </button>
       </main>
